@@ -1,0 +1,48 @@
+@mixin form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+}
+@mixin container-column {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+@mixin margin-bottom-10 {
+  margin-bottom: 10px;
+}
+$font-color: black;
+@mixin links {
+    text-decoration: none;
+    color: $font-color;
+}
+* {
+  color: $font-color;
+}
+body {
+  background-color: black;
+}
+header {
+  @include margin-bottom-10;
+}
+.login-form {
+  @include form;
+}
+.input-wrapper {
+  @include margin-bottom-10;
+}
+main {
+  @include container-column;
+}
+a {
+  color: $font-color;
+  @include links;
+}
+a:hover {
+  @include links;
+}
+p {
+  text-align: justify;
+}
