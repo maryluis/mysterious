@@ -35,7 +35,7 @@ const LoginPage = () => {
       </div>
       <div className="input-wrapper">
         <label htmlFor="password">Password</label>
-        <input id="password" className="form-control" onKeyPress={handleKeyPress} type="text" value={password} placeholder="your password" onChange={(el) => changePassword(el.target.value)} />
+        <input id="password" className="form-control" onKeyPress={handleKeyPress} type="password" value={password} placeholder="your password" onChange={(el) => changePassword(el.target.value)} />
       </div>
       <button className="btn btn-dark mb-2" onClick={handleLogin} type="button">Enter</button>
     </div>
