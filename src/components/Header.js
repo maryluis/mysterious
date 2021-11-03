@@ -8,7 +8,6 @@ const Header = () => {
   const history = useHistory();
   const dispatch = useDispatch();
   const location = useLocation();
-  // const state = useSelector(store => store);
   const isLogin = useSelector(store => store.login.isLogin);
   function handleClick() {
     if (isLogin) {

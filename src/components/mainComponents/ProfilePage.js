@@ -13,7 +13,7 @@ const ProfilePage = () => {
     } else {
       history.push('/login');
     }
-  }, []);
+  }, [isLogin]);
   const { city = null, languages = [], social = [] } = useSelector(state => state.profile);
   const icons = {
     vk: 'https://www.facebook.com/favicon.ico',
